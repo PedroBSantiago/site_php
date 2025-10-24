@@ -10,12 +10,13 @@
 <body>
   <div class="cadastro-container">
     <h2>Cadastro</h2>
-    <form action="login.html">
-      <input type="email" class="form-control" placeholder="Email" required>
-      <input type="text" class="form-control" placeholder="Setor" required>
-      <input type="tel" class="form-control" placeholder="Telefone" required>
-      <input type="password" class="form-control" placeholder="Senha" required>
-      <input type="password" class="form-control" placeholder="Confirmar senha" required>
+    <form action="cadastro.php" method="post">
+      <input type="nome" class="form-control" id="nome" name="nome" placeholder="nome" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+      <input type="text" class="form-control" id="Setor" name="Setor"  placeholder="Setor" required>
+      <input type="tel" class="form-control" id="Telefone" name="Telefone" placeholder="Telefone" required>
+      <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha" required>
+      <input type="password" class="form-control" id="Confirmar" name="Confirmar" placeholder="Confirmar senha" required>
       <button type="submit" class="btn btn-cadastrar">Cadastrar</button>
       <div class="text-center mt-3">
         <small>Já tem conta? <a href="login.html">Fazer login</a></small>

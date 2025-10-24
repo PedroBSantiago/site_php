@@ -10,10 +10,10 @@
 <body>
   <div class="login-container">
     <h2>Login</h2>
-    <form action="home.html">
-      <input type="email" class="form-control" placeholder="Email" required>
-      <input type="password" class="form-control" placeholder="Senha" required>
-      <input type="text" class="form-control" placeholder="Origem do cadastro" required>
+    <form action="login.php" method="post">
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+      <input type="password" class="form-control" id="Senha" name="Senha"  placeholder="Senha" required>
+      <input type="text" class="form-control" id="Origem" name="Origem" placeholder="Origem do cadastro" required>
       <button type="submit" class="btn btn-login">Entrar</button>
       <div class="text-center mt-3">
         <small>Não tem conta? <a href="cadastro.html">Cadastre-se</a></small>
