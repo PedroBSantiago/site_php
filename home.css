@@ -1,0 +1,39 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+    }
+
+    nav {
+      background-color: #111;
+    }
+
+    nav a {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff !important;
+      text-shadow: 0 0 8px #00ffff;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .glow {
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ffff; }
+      to { text-shadow: 0 0 20px #0077ff; }
+    }

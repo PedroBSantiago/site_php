@@ -1,0 +1,87 @@
+ body {
+      background: radial-gradient(circle at top, #000 0%, #0a0a0a 100%);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cadastro-container {
+      width: 400px;
+      background: rgba(30, 30, 30, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+      padding: 40px;
+      position: relative;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .cadastro-container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(#00ffff, transparent, #00ffff, transparent);
+      animation: rotate 8s linear infinite;
+      z-index: 0;
+      opacity: 0.25;
+    }
+
+    form {
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 25px;
+    }
+
+    .form-control {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      padding: 12px 20px;
+      margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    .btn-cadastrar {
+      width: 100%;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #00ffff, #0077ff);
+      border: none;
+      color: black;
+      font-weight: bold;
+      box-shadow: 0 0 15px #00ffff;
+      transition: all 0.3s ease;
+    }
+
+    .btn-cadastrar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ffff;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
