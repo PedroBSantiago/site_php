@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $usuario = "root";        // seu usuário do MySQL
-$senha = "";              // sua senha do MySQL
-$banco = "sistema_onibus"; // nome do banco de dados
+$senha = "admin";              // sua senha do MySQL
+$banco = "db_chama"; // nome do banco de dados
 
 $conn = new mysqli($host, $usuario, $senha, $banco);
 

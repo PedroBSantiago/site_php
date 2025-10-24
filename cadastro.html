@@ -11,12 +11,17 @@
   <div class="cadastro-container">
     <h2>Cadastro</h2>
     <form action="cadastro.php" method="post">
-      <input type="nome" class="form-control" id="nome" name="nome" placeholder="nome" required>
+      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
       <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-      <input type="text" class="form-control" id="Setor" name="Setor"  placeholder="Setor" required>
-      <input type="tel" class="form-control" id="Telefone" name="Telefone" placeholder="Telefone" required>
-      <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha" required>
-      <input type="password" class="form-control" id="Confirmar" name="Confirmar" placeholder="Confirmar senha" required>
+      <select name="setor" id="setor" class="form-control" required>
+        <option value="">Selecione o Setor</option>
+        <option value="recepcao">Recepção</option>
+        <option value="adm">Adm</option>
+        <option value="setor3">Setor 3</option>
+      </select>
+      <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required>
+      <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+      <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirmar senha" required>
       <button type="submit" class="btn btn-cadastrar">Cadastrar</button>
       <div class="text-center mt-3">
         <small>Já tem conta? <a href="login.html">Fazer login</a></small>
